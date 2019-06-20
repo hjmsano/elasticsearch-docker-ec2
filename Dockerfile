@@ -1,6 +1,6 @@
-FROM docker.elastic.co/elasticsearch/elasticsearch:6.6.2
+FROM docker.elastic.co/elasticsearch/elasticsearch:7.1.1
 
-#### You can add NLA plugins listed in https://www.elastic.co/guide/en/elasticsearch/plugins/6.6/analysis.html ####
+#### You can add NLA plugins listed in https://www.elastic.co/guide/en/elasticsearch/plugins/7.1/analysis.html ####
 RUN \
   elasticsearch-plugin install --batch analysis-icu && \
   elasticsearch-plugin install --batch analysis-kuromoji
